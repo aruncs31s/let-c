@@ -1,5 +1,8 @@
 # let-c
 
+- [Second sem First series Exam June 2023](1st-series-ec)
+- 
+
 ## Programms 
 
 1. **[Hello World]**(Hello-World)
@@ -74,3 +77,27 @@ int main(){
 }
 
 ```
+
+
+
+
+## 1st Series EC
+
+7 .  Write a program to find the reverse of a number entered by the user . If the user enters 32465 the reverse of the number is 56423
+
+
+#include <stdio.h>
+
+int main() {
+   int number;
+   printf("Enter the Number : ");
+   scanf("%d",number);
+   int lsd;
+   while(number>10){
+       lsd = number%10;
+       printf("%d",lsd);
+       number/=10;
+   }
+   
+   
+}
