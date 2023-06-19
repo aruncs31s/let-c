@@ -76,7 +76,7 @@ int main(){
     return 0;
 }
 
-```
+
 
 
 
@@ -85,19 +85,38 @@ int main(){
 
 7 .  Write a program to find the reverse of a number entered by the user . If the user enters 32465 the reverse of the number is 56423
 
-
+```
 #include <stdio.h>
 
 int main() {
    int number;
    printf("Enter the Number : ");
-   scanf("%d",number);
-   int lsd;
-   while(number>10){
-       lsd = number%10;
-       printf("%d",lsd);
-       number/=10;
+   scanf("%d",&number);
+
+  
+   for (;;number/=10)
+   {
+    printf("%d",number%10);
+        if(number < 9){
+            break;
+        }
+
    }
-   
-   
 }
+
+```
+
+
+8 a) . Write a program to print the numbers from 1 to 100 in descending order and display the sum of these numbers.
+```
+#include <stdio.h>
+int main(){
+    int sum;
+    for (int i = 100 ; i>0;i--){
+        sum +=i;
+        printf("\n%d",i);
+    }
+    printf("\nsum = %d",sum);
+    return 0;
+}
+```
